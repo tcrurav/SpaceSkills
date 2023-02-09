@@ -1,10 +1,6 @@
-# Unity VR Example to display Videos
+# Skills Space Orientation Experience 
 
-An Example to show Videos in folder Assets\Resources\Videos360.
-
-This is a screenshot example. As you can see the project creates a navigation system:
-
-![Screenshot](/screenshots/screenshot-1.png)
+A unity project with Videos and some 3D models to show in the next Skills meeting in the Canary Islands.
 
 ## Getting Started
 
@@ -21,10 +17,10 @@ You need a working environment with:
 The best option to start with this project is cloning it in your PC:
 
 ```
-git clone https://github.com/tcrurav/SkillsVR.git
+git clone https://github.com/tcrurav/SpaceSkills.git
 ```
 
-Just open the project with Unity Editor and run the scene `VideoTemplate`.
+Just open the project with Unity Editor and run the scene `SciFiCorridorScene`.
 
 Take into account that you should have some Videos to show in folder Assets\Resources\Videos360.
 
@@ -33,6 +29,8 @@ Each video should have:
 * A thumbnail foto file in the form Thumbnail-n.mp4
 
 You have to edit title and description for every video in Assets/Scripts/PanelManager.cs/InitializePanels() as well.
+
+You can download some 360 Videos examples from here: https://drive.google.com/drive/folders/1WS5Vu4Fztd64TFJMSjS_MKz_m_PjsKMk?usp=sharing
 
 Enjoy!!!
 

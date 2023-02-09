@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpaceShipScene.unity
     guid: 3c86e76eddee0944485911af932274f3
+  - enabled: 1
+    path: Assets/Scenes/VideoTemplate.unity
+    guid: 1a3381ce4b06ee44c8c477fe3688e3c1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1b68660259b24454fae8c23efc347d17,
       type: 2}
