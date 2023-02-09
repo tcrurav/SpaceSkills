@@ -1,4 +1,4 @@
-# Skills Space Orientation Experience 
+# Skills Space Counselling Experience 
 
 A unity project with Videos and some 3D models to show in the next Skills meeting in the Canary Islands.
 
@@ -31,6 +31,8 @@ Each video should have:
 You have to edit title and description for every video in Assets/Scripts/PanelManager.cs/InitializePanels() as well.
 
 You can download some 360 Videos examples from here: https://drive.google.com/drive/folders/1WS5Vu4Fztd64TFJMSjS_MKz_m_PjsKMk?usp=sharing
+
+Copy the Videos into Assets\Resources\Videos360
 
 Enjoy!!!
 
