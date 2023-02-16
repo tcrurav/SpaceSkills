@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/HomeScene.unity
+    guid: 152ab715fb0b00d4e9b7731053b75032
+  - enabled: 1
     path: Assets/Scenes/SciFiCorridorScene.unity
     guid: 99bcfd4a54da5164498edc4e64f8e661
   - enabled: 1
