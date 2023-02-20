@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: 99bcfd4a54da5164498edc4e64f8e661
   - enabled: 1
     path: Assets/Scenes/SpaceShipScene.unity
-    guid: 3c86e76eddee0944485911af932274f3
+    guid: ecd1ac577e4a34049b0b03bc34634939
   - enabled: 1
     path: Assets/Scenes/VideoTemplate.unity
     guid: 1a3381ce4b06ee44c8c477fe3688e3c1

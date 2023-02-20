@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class TVController : MonoBehaviour
 {
     public GameObject tvVideoPlayer;
-    public UnityEngine.UI.RawImage tvRawImage;
     public UnityEngine.UI.RawImage tvRawImageThumbnail;
+    public UnityEngine.UI.RawImage tvRawImage;
+
+    public GameObject tvVideoPlayerInFrontOf;
+    public UnityEngine.UI.RawImage tvRawImageThumbnailInFrontOf;
+
 
     private void Awake()
     {
@@ -35,6 +39,12 @@ public class TVController : MonoBehaviour
             tvRawImageThumbnail.gameObject.SetActive(true);
             tvVideoPlayer.GetComponent<UnityEngine.Video.VideoPlayer>().Stop();
             return;
+        }
+
+        if (tvVideoPlayerInFrontOf.GetComponent<UnityEngine.Video.VideoPlayer>().isPlaying)
+        {
+            tvRawImageThumbnailInFrontOf.gameObject.SetActive(true);
+            tvVideoPlayerInFrontOf.GetComponent<UnityEngine.Video.VideoPlayer>().Stop();
         }
 
         tvRawImageThumbnail.gameObject.SetActive(false);
