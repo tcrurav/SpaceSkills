@@ -23,6 +23,6 @@ public class PortalController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         audioPortal.Stop();
-        SceneManager.LoadScene("VideoTemplate");
+        SceneManager.LoadScene("VRVideoScene");
     }
 }

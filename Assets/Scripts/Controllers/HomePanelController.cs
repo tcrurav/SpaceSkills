@@ -15,7 +15,7 @@ public class HomePanelController : MonoBehaviour
     public void OnClickPanel()
     {
         audioClickPanel.Play();
-        SpaceShip.Name = spaceShipName;
+        SpaceShip.groupName = spaceShipName;
         SceneManager.LoadScene("SciFiCorridorScene");
     }
 

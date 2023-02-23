@@ -20,7 +20,7 @@ public class SpaceShipSceneController : MonoBehaviour
     {
         Debug.Log("Awake");
         //RenderSettings.skybox = spaceShipMaterial;
-        switch (SpaceShip.Name)
+        switch (SpaceShip.groupName)
         {
             case "Group-1":
                 group1Left.gameObject.SetActive(true);

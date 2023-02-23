@@ -8,6 +8,8 @@ public class DropdownController : MonoBehaviour
     public GameObject[] panels;
     public Dropdown dropdownInFrontOf;
 
+    public string[] videos;
+
     private Dropdown m_Dropdown;
     //private GameObject[] panels = new ArrayList<GameObject>();
 
@@ -38,6 +40,15 @@ public class DropdownController : MonoBehaviour
             }
         }
 
+        if (videos[change.value] != null)
+        {
+            SpaceShip.videoToLoad = videos[change.value];
+        } 
+        else
+        {
+            SpaceShip.videoToLoad = "";
+        }
+        
         dropdownInFrontOf.value = change.value;
     }
 }

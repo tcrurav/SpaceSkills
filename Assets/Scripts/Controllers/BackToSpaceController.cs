@@ -9,4 +9,9 @@ public class BackToSpaceController : MonoBehaviour
     {
         SceneManager.LoadScene("SciFiCorridorScene");
     }
+
+    public void OnClickBackToSpaceship()
+    {
+        SceneManager.LoadScene("SpaceShipScene");
+    }
 }
