@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,9 @@ public class PortalFamilyController : MonoBehaviour
     public Dropdown dropdownInFrontOf;
     public Toggle toggle;
     public Toggle toggleInFrontOf;
+    public string videoToLoad;
+
+    public GameObject messageCanvas;
     public void TogglePortal()
     {
         if (SpaceShip.justChangedToggle)
@@ -38,11 +42,9 @@ public class PortalFamilyController : MonoBehaviour
 
         audioPortal.Play();
         portalActivation.SetActive(true);
-    }
+        SpaceShip.videoToLoad = videoToLoad != null ? videoToLoad : "";
 
-    private void OnTriggerEnter(Collider other)
-    {
-        audioPortal.Stop();
-        SceneManager.LoadScene("VRVideoScene");
+        //messageCanvas = GameObject.Find(SpaceShip.MESSAGE_CANVAS);
+        messageCanvas.gameObject.SetActive(true);
     }
 }
