@@ -23,12 +23,17 @@ public class PortalController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        ResetSpaceShip();
-        SceneManager.LoadScene(SpaceShip.VR_VIDEO_SCENE);
+        DoTeleporting();
     }
 
     private void ResetSpaceShip()
     {
         audioPortal.Stop();
+    }
+
+    public void DoTeleporting()
+    {
+        ResetSpaceShip();
+        SceneManager.LoadSceneAsync(SpaceShip.VR_VIDEO_SCENE);
     }
 }

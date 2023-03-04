@@ -9,6 +9,9 @@ public static class SpaceShip
     public static AudioSource audioPlaying = null;
     public static bool justChangedToggle = false;
 
+    public static bool teletransportActivated = false;
+    public static bool watchingVideo = false;
+
     public static string MESSAGE_CANVAS = "MessageCanvas";
 
     public static string VR_VIDEO_SCENE = "VRVideoScene";

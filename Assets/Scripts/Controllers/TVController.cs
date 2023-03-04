@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,6 @@ public class TVController : MonoBehaviour
 
     public GameObject tvVideoPlayerInFrontOf;
     public UnityEngine.UI.RawImage tvRawImageThumbnailInFrontOf;
-
 
     private void Awake()
     {
@@ -56,7 +56,4 @@ public class TVController : MonoBehaviour
         Debug.Log("Activate");
     }
 
-  
-
-    
 }

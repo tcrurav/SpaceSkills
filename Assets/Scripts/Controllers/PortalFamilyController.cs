@@ -15,9 +15,17 @@ public class PortalFamilyController : MonoBehaviour
     public Toggle toggleInFrontOf;
     public string videoToLoad;
 
+    //public GameObject tvVideoPlayer;
+    //public UnityEngine.UI.RawImage tvRawImageThumbnail;
+    //public UnityEngine.UI.RawImage tvRawImage;
+
+    //public GameObject tvVideoPlayerInFrontOf;
+    //public UnityEngine.UI.RawImage tvRawImageThumbnailInFrontOf;
+
     public GameObject messageCanvas;
     public void TogglePortal()
     {
+
         if (SpaceShip.justChangedToggle)
         {
             SpaceShip.justChangedToggle = false;
@@ -47,4 +55,20 @@ public class PortalFamilyController : MonoBehaviour
         //messageCanvas = GameObject.Find(SpaceShip.MESSAGE_CANVAS);
         messageCanvas.gameObject.SetActive(true);
     }
+
+    //public void StopVideos()
+    //{
+    //    if (tvVideoPlayer.GetComponent<UnityEngine.Video.VideoPlayer>().isPlaying)
+    //    {
+    //        tvRawImageThumbnail.gameObject.SetActive(true);
+    //        tvVideoPlayer.GetComponent<UnityEngine.Video.VideoPlayer>().Stop();
+    //        return;
+    //    }
+
+    //    if (tvVideoPlayerInFrontOf.GetComponent<UnityEngine.Video.VideoPlayer>().isPlaying)
+    //    {
+    //        tvRawImageThumbnailInFrontOf.gameObject.SetActive(true);
+    //        tvVideoPlayerInFrontOf.GetComponent<UnityEngine.Video.VideoPlayer>().Stop();
+    //    }
+    //}
 }

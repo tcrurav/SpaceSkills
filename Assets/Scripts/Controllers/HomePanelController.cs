@@ -9,14 +9,13 @@ public class HomePanelController : MonoBehaviour
 {
     public AudioSource audioClickPanel;
     public string spaceShipName;
-
-    //public XRRayInteractor rayInteractor;
+    public GameObject loadingCanvas;
 
     public void OnClickPanel()
     {
         audioClickPanel.Play();
         SpaceShip.groupName = spaceShipName;
-        SceneManager.LoadScene("SciFiCorridorScene");
+        loadingCanvas.SetActive(true);
     }
 
 }

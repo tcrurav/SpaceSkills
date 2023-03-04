@@ -8,16 +8,24 @@ public class SceneChanger : MonoBehaviour
     public Material spaceShipMaterial;
     public Material sciFiCorridorMaterial;
 
+    //public GameObject loadingCanvas;
+
     public void ChangeToSpaceShipScene()
     {
         Debug.Log("ChangeToSpaceShipScene");
-        SceneManager.LoadScene("SpaceShipScene");
+        SceneManager.LoadSceneAsync("SpaceShipScene");
+
+        //SceneManager.LoadScene("SpaceShipScene");
+        //loadingCanvas.SetActive(true);
     }
 
     public void ChangeToSciFiCorridorScene()
     {
         Debug.Log("ChangeToSciFiCorridorScene");
-        SceneManager.LoadScene("SciFiCorridorScene");
+        SceneManager.LoadSceneAsync("SciFiCorridorScene");
+
+        //SceneManager.LoadScene("SciFiCorridorScene");
+        //loadingCanvas.SetActive(true);
     }
 
     public void OnHover()
